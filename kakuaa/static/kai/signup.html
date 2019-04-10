@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Kakuaa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+<!-- Navigation Bar-->
+<nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm">
+    <a class="navbar-brand float-left font-weight-bold" 
+    style="color: rgb(230, 30, 150)" href=""> Kakuaa </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    style="border: none" data-target="#collapsibleNavbar">
+        <span class="fa fa-angle-down"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <div class="nav-item">
+                <input type="text" class="form-control" width="40px" 
+                style="border-radius: 25px;" placeholder="Search topics...">
+            </div>
+            <li class="nav-item dropdown" style="margin-left: 12px;">
+                <a class="nav-link dropdown-toggle kakuaa-underline kakuaa-linked" style="display: block;" data-toggle="dropdown" href="#"> Explore </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html"> Home </a> 
+                    <a class="dropdown-item" href="signin.html"> Sign in </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<!-- End Navigation Bar-->
+
+<div class="jumbotron container-fluid bg-white border">
+    <h1 class="kakuaa-title mr-auto"> Join Kakuaa </h1>
+    <p class="kakuaa-title mr-auto"> Start creating front end application prototypes in just a few minutes... </p>
+    <div class="kakuaa-divider"></div>
+    <form autocomplete="off">
+        <div class="form-group">
+            <label for="email"> Email Address: <b style="color: red">*</b> </label>
+            <input type="email" class="form-control" id="email" autocapitalize="off" autofocus="autofocus" required="required" autocomplete="off" spellcheck="false">
+            <br>
+            <p class="kakuaa-title" style="font-size:12px!important"> This will also be your login username. You can add your name or the name 
+            of your organization on your profile. We’ll occasionally send updates about your account to this inbox. We’ll never share your 
+            email address with anyone.</p>
+        </div>
+        <div class="form-group">
+            <label for="password"> password: <b style="color: red">*</b>
+            </label>
+            <input type="password" class="form-control" id="password" required="required" minlength="15">
+            <br>
+            <p class="kakuaa-title" style="font-size:12px!important">
+            Make sure it's at least 15 characters including a number and a lowercase letter. </p>
+        </div>
+        <button class="btn kakuaa-btn-signup mr-auto" type="submit" id="signup_btn"> Create an account </button>
+    </form>
+</div>
+
+<div class="page-footer text-center border" style="background-color: rgb(230, 230, 230)">
+    <div class="container-fluid mx-auto" style="margin: 30px;">
+        <a href="#" style="margin-right: 10px"><span class="fab fa-github mx-auto" style="font-size: 30px"></span></a>
+        <a href="#" style="margin-right: 10px; margin-left: 10px"><span class="fab fa-twitter mx-auto" style="font-size: 30px"></span></a>
+        <a href="#" style="margin-left: 10px"><span class="fab fa-medium mx-auto" style="font-size: 30px"></span></a>
+        <br><br><h9 style="color: rgb(70, 70, 70)"> Copyright © 2019 Nicolás Ortiz </h9>
+    </div>
+</div>
+
+</body>
+</html>

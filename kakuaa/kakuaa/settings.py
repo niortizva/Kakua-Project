@@ -36,6 +36,8 @@ CORS_ORIGIN_WHITELIST = (
     '*',
 )
 
+CORS_ALLOW_CREDENTIALS = True
+
 # Application definition
 
 INSTALLED_APPS = [

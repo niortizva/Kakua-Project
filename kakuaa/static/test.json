@@ -1,0 +1,145 @@
+{
+    "page": {
+        "name": "Kakuaa Test",
+        "elements": [
+            
+            { 
+                "type": "navbar", 
+                "background-color": "black",
+                "color": "white", 
+                "elements": [
+                    { 
+                        "type": "a",
+                        "href": "",
+                        "value": "Home" 
+                    },
+                    {
+                        "type": "a",
+                        "href": "",
+                        "value": "Tables"
+                    },
+                    {
+                        "type": "a",
+                        "href": "",
+                        "value": "Images"
+                    },
+                    {
+                        "type": "a",
+                        "href": "",
+                        "value": "Containers"
+                    },
+                    {
+                        "type": "a",
+                        "href": "",
+                        "value": "Alerts"
+                    },
+                    {
+                        "type": "a",
+                        "href": "",
+                        "value": "Buttons"
+                    }
+                ] 
+            },
+            
+            { 
+                "type": "container", 
+                "background-color": "black", 
+                "color": "white",
+                "width": "500px",
+                "elements": [
+                    {"type": "Title", "value": "My First Kakuaa Project"}
+                    ]
+            },
+            
+            {
+                "id": "section1",
+                "type": "container",
+                "elements":[
+                    { 
+                        "type": "Title", 
+                        "value": "Tables" 
+                    },
+                    { 
+                        "type": "table", 
+                        "table-head": [
+                            "Firstname",
+                            "Lastname",
+                            "Email"
+                        ],
+                        "table-content":[
+                            ["John0","Doe","john0@kakuaa.com"],
+                            ["John1","Doe","john1@kakuaa.com"],
+                            ["John2","Doe","john2@kakuaa.com"],
+                            ["John3","Doe","john3@kakuaa.com"]
+                        ]  
+                    },
+                    { 
+                        "type": "table-dark",
+                        "table-head": [
+                            "Firstname",
+                            "Lastname",
+                            "Email"
+                        ],
+                        "table-content":[
+                            ["John0","Doe","john0@kakuaa.com"],
+                            ["John1","Doe","john1@kakuaa.com"],
+                            ["John2","Doe","john2@kakuaa.com"],
+                            ["John3","Doe","john3@kakuaa.com"]
+                        ] 
+                    },
+                    { 
+                        "type": "table-bordered",
+                        "table-head": [
+                            "Firstname",
+                            "Lastname",
+                            "Email"
+                        ],
+                        "table-content":[
+                            ["John0","Doe","john0@kakuaa.com"],
+                            ["John1","Doe","john1@kakuaa.com"],
+                            ["John2","Doe","john2@kakuaa.com"],
+                            ["John3","Doe","john3@kakuaa.com"]
+                        ] 
+                    },
+                    { 
+                        "type": "table-hover",
+                        "table-head": [
+                            "Firstname",
+                            "Lastname",
+                            "Email"
+                        ],
+                        "table-content":[
+                            ["John0","Doe","john0@kakuaa.com"],
+                            ["John1","Doe","john1@kakuaa.com"],
+                            ["John2","Doe","john2@kakuaa.com"],
+                            ["John3","Doe","john3@kakuaa.com"]
+                        ] 
+                    }
+                ]
+            },
+            
+            {
+                "id": "section2",
+                "type": "container",
+                "elements":[
+                    { 
+                        "type": "Title", 
+                        "value": "Images" 
+                    }
+                ]
+            },
+
+            {
+                "id": "section3",
+                "type": "container",
+                "elements":[
+                    { 
+                        "type": "Title", 
+                        "value": "Containers" 
+                    }
+                ]
+            }
+
+        ]
+    }
+}

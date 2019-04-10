@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head id="head">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="jquery.cookie.js"></script>
     </head>
 
-    <body id="body"></body>
+    <body id="body">
+        <div class="spinner-border" id="loading_spin" style="position: fixed;
+        left: 50%; top: 50%;"></div>
+    </body>
     
     <script src="keys.js"></script>
     <script>
+        function wait(ms){ 
+            var d = new Date(); 
+            var d2 = null;
+            do { d2 = new Date(); }
+            while(d2-d < ms);
+        }
         $(document).ready(function(){
             $.ajax({
+                credentials: 'include',
                 type: "POST",
                 url: "http://localhost:8000/test/",
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader ("Authorization",
                     "Basic " + btoa(user + ":" + pass));
+                    $("#loading_spin").show()
                 },
                 success: function(data){
-                    document.getElementById("body").innerHTML += data;
+                    wait(100);
+                    document.getElementById("body").innerHTML += data.body;
                 },
                 error: function(error){
                     window.alert(JSON.stringify(error));
                 },
                 complete: function(){
+                    $("#loading_spin").hide()
                     $("#btn1").click(function(){
                         window.alert("Test is succesful")
                     });

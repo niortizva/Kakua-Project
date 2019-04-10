@@ -1,4 +1,4 @@
-#kakuaa API.
+#Kakuaa API.
 
 ##Introduction
 

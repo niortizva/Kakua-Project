@@ -1,0 +1,91 @@
+.dropdown:hover .kakuaa-linked {
+    font-weight: bold!important;
+    color: rgb(230,30,150,0.70)!important;
+    border-bottom: 2px solid rgba(230, 30, 150,0.70)!important;
+    line-height: 0.80!important;    
+}
+
+.kakuaa-underline:hover{
+    font-weight: bold!important;
+    color: rgb(230,30,150,0.70)!important;
+    border-bottom: 2px solid rgba(230, 30, 150,0.70);
+    line-height: 0.80!important;
+}
+
+.kakuaa-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+.kakuaa-btn-fill {
+    width: 130px!important;
+    border-radius: 35px!important;
+    color: white;
+    background-color: rgb(30, 101, 255);
+}
+
+.kakuaa-btn-fill:hover {
+    color: white;
+    background-color: rgba(30, 101, 255, 0.623);
+}
+
+.kakuaa-btn-bord {
+    width: 130px!important;
+    border-radius: 35px!important;
+    color: rgb(30, 101, 255)!important;
+    background-color: white;
+    border-color: rgb(30, 101, 255);
+}
+
+.kakuaa-divider {
+    height: 1px;
+    width:100%;
+    display:block; /* for use on default inline elements like span */
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: rgba(30, 101, 255,0.20);
+  }
+
+ .kakuaa-btn-signup {
+    color: white;
+    background-color: rgb(30, 101, 255,0.50);
+}
+
+.kakuaa-btn-signup:hover {
+    color: white;
+    background-color: rgba(30, 101, 255, 1);
+}
+
+.kakuaa-btn-home:hover {
+    color: white;
+    background-color: rgba(230, 30, 150,0.50);
+}
+
+.kakuaa-btn-home {
+    color: white;
+    background-color: rgba(230, 30, 150,1);
+}
+
+.kakuaa-btn-signin-bord:hover {
+    width: 100px!important;
+    color: rgba(230, 30, 150,0.50);
+    background-color: white;
+    border-color: rgba(230, 30, 150,0.50);
+}
+
+.kakuaa-btn-signin-bord {
+    width: 100px!important;
+    color: rgba(230, 30, 150,1);
+    background-color: white;
+    border-color: rgba(230, 30, 150,1);
+}
+
+.kakuaa-btn-login:hover {
+    color: white;
+    background-color: rgb(30, 101, 255,0.50);
+}
+
+.kakuaa-btn-login {
+    color: white;
+    background-color: rgba(30, 101, 255, 1);
+}
