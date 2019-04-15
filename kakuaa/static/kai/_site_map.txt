@@ -1,0 +1,51 @@
+Learn Pages:
+ 
+	Guide:
+		Get Started
+		Usage
+		Kai
+		Kashis
+		
+	Examples:
+		Welcome
+		Kai
+		Kshis
+	
+Contribute Pages:
+
+	Guides:
+		Contribution Guide
+		Report a Bug
+		Github
+		
+	Support Us:
+		Donations
+		Become a Sponsor
+		
+News Pages:
+	
+	API:
+		Features
+		Kai
+		Kashis
+		Fixed Bugs
+		
+	Community:
+		New Sponsors
+		Events
+		
+	Blog
+	
+User Pages:
+
+	*User sign up
+	
+	*User sign in
+	
+	*User forgot
+	
+	User dashboard:
+		Keys
+		History: per Application
+		
+	Contact Support

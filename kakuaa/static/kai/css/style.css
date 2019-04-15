@@ -1,15 +1,36 @@
+.dropdown {
+    transition-duration: 500ms!important;
+}
+
 .dropdown:hover .kakuaa-linked {
     font-weight: bold!important;
     color: rgb(230,30,150,0.70)!important;
+    /*text-decoration: underline solid rgb(230,30,150,0.70); */
     border-bottom: 2px solid rgba(230, 30, 150,0.70)!important;
-    line-height: 0.80!important;    
+    line-height: 0.80!important;
+    list-style-position: inside;
+}
+
+.kakuaa-underline {
+    transition-duration: 500ms!important;
 }
 
 .kakuaa-underline:hover{
     font-weight: bold!important;
     color: rgb(230,30,150,0.70)!important;
+    /*text-decoration: underline solid rgb(230,30,150,0.70); */
     border-bottom: 2px solid rgba(230, 30, 150,0.70);
     line-height: 0.80!important;
+    list-style-position: inside;
+}
+
+.kakuaa-sidebar:hover .kakuaa-linked-menu {
+    font-weight: bold!important;
+    color: rgb(230,30,150,0.70)!important;
+    /*text-decoration: underline solid rgb(230,30,150,0.70); */
+    border-bottom: 2px solid rgba(230, 30, 150,0.70)!important;
+    line-height: 0.80!important;
+    list-style-position: inside;
 }
 
 .kakuaa-title {
@@ -22,6 +43,7 @@
     border-radius: 35px!important;
     color: white;
     background-color: rgb(30, 101, 255);
+    transition-duration: 500ms!important;
 }
 
 .kakuaa-btn-fill:hover {
@@ -49,6 +71,7 @@
  .kakuaa-btn-signup {
     color: white;
     background-color: rgb(30, 101, 255,0.50);
+    transition-duration: 500ms!important;
 }
 
 .kakuaa-btn-signup:hover {
@@ -56,14 +79,23 @@
     background-color: rgba(30, 101, 255, 1);
 }
 
+.kakuaa-btn-home {
+    color: white;
+    background-color: rgba(230, 30, 150,1);
+    transition-duration: 500ms!important
+}
+
 .kakuaa-btn-home:hover {
     color: white;
     background-color: rgba(230, 30, 150,0.50);
 }
 
-.kakuaa-btn-home {
-    color: white;
-    background-color: rgba(230, 30, 150,1);
+.kakuaa-btn-signin-bord {
+    width: 100px!important;
+    color: rgba(230, 30, 150,1);
+    background-color: white;
+    border-color: rgba(230, 30, 150,1);
+    transition-duration: 500ms!important;
 }
 
 .kakuaa-btn-signin-bord:hover {
@@ -73,11 +105,8 @@
     border-color: rgba(230, 30, 150,0.50);
 }
 
-.kakuaa-btn-signin-bord {
-    width: 100px!important;
-    color: rgba(230, 30, 150,1);
-    background-color: white;
-    border-color: rgba(230, 30, 150,1);
+.kakuaa-btn-login {
+    transition-duration: 500ms!important;
 }
 
 .kakuaa-btn-login:hover {
@@ -88,4 +117,42 @@
 .kakuaa-btn-login {
     color: white;
     background-color: rgba(30, 101, 255, 1);
+}
+
+.kakuaa-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 20px;
+    transition-duration: 500ms!important;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgb(230, 230, 230);
+}
+
+.kakuaa-sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+}
+
+.kakuaa-sidebar a:hover {
+    color: rgba(230, 30, 150,0.50);
+}
+
+.kakuaa-main-content {
+    transition: margin-right .5s;
+}
+
+.kakuaa-topic {
+    border-left: 4px solid;
+    display: block;
+    margin: 30px;
+    cursor: pointer;
 }

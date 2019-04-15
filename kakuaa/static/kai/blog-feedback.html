@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Kakuaa</title>
+    <title>Blog - Site Feedback</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -24,10 +24,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
-            <div class="nav-item">
-                <input type="text" class="form-control" width="40px" 
-                style="border-radius: 25px;" placeholder="Search topics...">
-            </div>
+            <a class="nav-link kakuaa-underline kakuaa-linked" style="display: block;" href="index.html"> Home </a>
             <li class="nav-item dropdown" style="margin-left: 12px;">
                 <a class="nav-link dropdown-toggle kakuaa-underline kakuaa-linked" style="display: block;" data-toggle="dropdown" href="#"> Learn </a>
                 <div class="dropdown-menu pre-scrollable" style="height: 200px;">
@@ -75,7 +72,7 @@
                     <a class="dropdown-item" href="community.html#sponsors"> New Sponsors </a>
                     <a class="dropdown-item" href="community.html#events"> Events </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-header" href="blog.html"><i class="fas fa-link fa-xs"></i> Blog </a>
+                    <a class="dropdown-header" href="#"><i class="fas fa-link fa-xs"></i> Blog </a>
                 </div>
             </li>
             <li class="nav-item dropdown" style="margin-left: 12px">
@@ -98,32 +95,66 @@
 </div>
 </nav>
 <!-- End Navigation Bar-->
+<div class="container-fluid">
+    <div class="alert" style="margin: 20px; background-color: rgba(230,30,150,0.15)">
+        In order to receive the best answers to your questions please follow these simple guidelines.<br><br>
+        <ol>
+            <li>Be descriptive about your question or problem and be sure to include any errors. 
+            Single line topics will rarely receive answers.</li><br>
+            <li>Provide examples of the code in question and use syntax highlighting. Just enclose your code in 3 backticks ( ``` ), like this: ``` document.getElementById("main") ``` .</li><br>
+            <li>Breakdown the issue in your code and provide a link to an example that replicates it. 
+            Use <a href="https://jsfiddle.net/" style="font:bold">JSFiddle</a>, 
+            <a href="https://codepen.io/" style="font:bold">CodePen</a>, <a href="https://jsbin.com/" style="font:bold">JSBin</a>, or 
+            <a href="https://codesandbox.io/" style="font:bold">CodeSandbox</a></li>
+        </ol><br>
+        Following these few steps will greatly improve your chances of getting 
+        a good quality answer to your issue. Remember, everyone is here to share 
+        ideas and to help out using their own free time. 
+        Making an effort to craft a well thought out topic pays tribute to this.
+    </div>
+</div>
 
-<!-- Banner -->
-<div class="jumbotron bg-white shadow-sm">
-    <div class="container-fluid">
-        <div class="row justify-content-center" style="margin-left: 5%; margin-right: 5%">
-            <div class="col-lg-6 text-lg-left">
-                <img src="images/logo.svg" width="380px" class="img-fluid mx-auto" 
-                style="min-width: 380px; display: block;">
-            </div>
-            <div class="col-lg-6 text-md-center text-lg-left">
-                <h1 class="kakuaa-title mx-auto"> A Web prototyping Front end Service </h1><br>
-                <div class="btn-group-sm btn-group-vertical-sm">
-                    <button class="btn kakuaa-btn-fill mx-auto"> Get Started </button>
-                    <button class="btn kakuaa-btn-bord mx-auto"> About </button><br><br>                                              
-                </div>
-            </div>
+<div class="container-fluid">
+    <div class="kakuaa-topic" style="border-color: rgba(116, 116, 116, 0.7)">
+        <div style="margin: 10px">
+            <h1 class="kakuaa-title"> Site Feedback </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit inventore veritatis soluta.
+            </p>
+            Issues: <span class="badge badge-secondary"> 0 </span> Solved: <span class="badge badge-success"> 0 </span> Unsolved <span class="badge badge-danger"> 0 </span>
         </div>
     </div>
 </div>
-<!-- End Banner-->
 
-<div class="jumbotron text-center" style="margin-bottom:100px">
-    <h5 style="color:rgb(70, 70, 70)"> Sponsors </h5><br><br>
-    <button class="btn kakuaa-btn-bord mx-auto" style="width: 250px!important;"> Become a Sponsor </button>
+<div>
+    <input type="text" class="form-control" width="140px" 
+    style="border-radius: 25px; margin: 10px" placeholder="Search topics...">
+    <div class="dropdown-divider"></div>
 </div>
 
+<div style="margin: 20px">
+    <div class="media border p-3">
+        <img src="images/admin.svg" alt="Kakuaa Team" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+            <h4>Kakuaa Team <small><i>Posted on February 19, 2016</i></small></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+        </div>
+    </div>
+    <div class="media border p-3">
+        <img src="images/admin.svg" alt="Kakuaa Team" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+            <h4>Kakuaa Team <small><i>Posted on February 19, 2016</i></small></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+        </div>
+    </div>
+    <div class="media border p-3">
+        <img src="images/admin.svg" alt="Kakuaa Team" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+            <h4>Kakuaa Team <small><i>Posted on February 19, 2016</i></small></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+        </div>
+    </div>
+</div>
 <div class="page-footer text-center border" style="background-color: rgb(230, 230, 230)">
     <div class="container-fluid mx-auto" style="margin: 30px;">
         <a href="#" style="margin-right: 10px"><span class="fab fa-github mx-auto" style="font-size: 30px"></span></a>

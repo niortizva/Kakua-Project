@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+ 
+<div id="main" class="kakuaa-main-content">
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <a class="navbar-brand float-left font-weight-bold" 
+        style="color: rgb(230, 30, 150)" href="">Kakuaa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        style="border: none" data-target="#collapsibleNavbar">
+            <span class="fa fa-angle-down"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <div class="nav-item">
+                    <input type="text" class="form-control" width="40px" 
+                    style="border-radius: 25px;" placeholder="Search topics...">
+                </div>
+                <li class="nav-item dropdown" style="margin-left: 12px;">
+                    <a class="nav-link kakuaa-underline kakuaa-linked" style="display: block;" href="index.html"> Home </a>
+                </li>
+                <li class="nav-item dropdown" style="margin-left: 12px">
+                    <a class="nav-link dropdown-toggle kakuaa-underline kakuaa-linked" style="display: block;" 
+                    data-toggle="dropdown" href="#"> Users </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="signin.html"> Sign in </a> 
+                        <a class="dropdown-item" href="signup.html"> Sign up </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" style="margin-left: 12px;">
+                    <a class="nav-link dropdown-toggle kakuaa-underline kakuaa-linked-menu" style="display: block;"
+                    onclick="document.getElementById('sidebar').style.width='200px';
+                    document.getElementById('main').style.marginRight = '200px';"> Menu 
+                    </a>
+                </li>            
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!-- End Navigation Bar-->
+
+    <!--Content-->
+    <div class="jumbotron container-fluid bg-white border">
+        <h1 class="kakuaa-title mr-auto" id="get-started"> Get Started </h1>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="what-kakuaa"> What is Kakuaa ?</h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+            <div class="alert alert-success">
+                <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-info">
+                <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-danger">
+                <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-primary">
+                <strong>Primary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-secondary">
+                <strong>Secondary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-dark">
+                <strong>Dark!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+            <div class="alert alert-light">
+                <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+            </div>
+<!--Code-->
+<pre style="height: 400px; white-space: pre-line; word-wrap: break-word; 
+text-align: justify; margin: 2%; overflow-y: scroll;" class="container-fluid border">
+<code class="language-javascript" style="margin: 10px">$(document).ready(function(){ 
+    $.ajax({ 
+        type: "POST",
+        url: "[URL service]",
+        beforeSend: function (xhr) { 
+            xhr.setRequestHeader ("Authorization", 
+            "Basic " + btoa(user + ":" + password)); 
+        },
+        processData: false, 
+        data: JSON.stringify( { data } ),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function(data){
+            alert(JSON.stringify(data));
+        },
+        error: function(error){
+            alert(JSON.stringify(error));
+        },
+    });
+});</code>
+</pre>
+<!--end Code-->
+        </section>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="how-works"> How it Works ?</h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="data-structure"> Data request structure</h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+    </div>
+    <div class="jumbotron container-fluid bg-white border">
+        <h1 class="kakuaa-title mr-auto" id="usage"> Usage</h1>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="pure-javascript"> Pure Javascript </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="jquery"> JQuery </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="python"> Python </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="cpp"> C++ </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="curl"> Curl </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+    </div>
+    <div class="jumbotron container-fluid bg-white border">
+        <h1 class="kakuaa-title mr-auto" id="kai"> Kai</h1>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="what-kai"> What is a Kai ? </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="kai-el"> Kai Elements </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+    </div>
+    <div class="jumbotron container-fluid bg-white border">
+        <h1 class="kakuaa-title mr-auto" id="kashi"> Kashi</h1>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="what-kashi"> What is a Kashi ? </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+        <section style="margin-top: 50px" class="text-justify">
+            <h2 class="kakuaa-title mr-auto" id="kashi-el"> Kashi Elements </h2>
+            <div class="dropdown-divider"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci sapiente unde dolor aliquam voluptas dignissimos itaque numquam, 
+                consectetur quas similique ipsum aliquid omnis, molestias, 
+                sequi dolorem officia placeat deleniti officiis. 
+            </p>
+        </section>
+
+    </div>
+    <!--End Content-->
+
+    <!--Footer-->
+    <div class="page-footer text-center border" style="background-color: rgb(230, 230, 230)">
+        <div class="container-fluid mx-auto" style="margin: 30px;">
+            <a href="#" style="margin-right: 10px"><span class="fab fa-github mx-auto" style="font-size: 30px"></span></a>
+            <a href="#" style="margin-right: 10px; margin-left: 10px"><span class="fab fa-twitter mx-auto" style="font-size: 30px"></span></a>
+            <a href="#" style="margin-left: 10px"><span class="fab fa-medium mx-auto" style="font-size: 30px"></span></a>
+            <br><br><h9 style="color: rgb(70, 70, 70)"> Copyright © 2019 Nicolás Ortiz </h9>
+        </div>
+    </div>
+    <!--End Footer-->
+</div>
+
+<!--Sidebar-->
+<div class="kakuaa-sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="document.getElementById('sidebar').style.width='0px';
+    document.getElementById('main').style.marginRight = '0px';">&times;</a><br>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-header" href="#get-started"><i class="fas fa-link fa-xs"></i> Get Started </a>
+    <div class="dropdown-divider"></div> 
+    <a href="#what-kakuaa">What is Kakuaa ?</a><br>
+    <a href="#how-works">How it works ?</a><br>
+    <a href="#data-structure">Data request structure</a><br>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-header" href="#usage"><i class="fas fa-link fa-xs"></i> Usage </a>
+    <div class="dropdown-divider"></div> 
+    <a href="#pure-javascript">Pure Javascript</a><br>
+    <a href="#jquery">JQuery</a><br>
+    <a href="#python">Python</a><br>
+    <a href="#cpp">C++</a><br>
+    <a href="#curl">Curl</a><br>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-header" href="#kai"><i class="fas fa-link fa-xs"></i> Kai </a>
+    <div class="dropdown-divider"></div> 
+    <a href="#what-kai">What is a Kai ?</a><br>
+    <a href="#kai-el">Kai Elements</a><br>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-header" href="#kashi"><i class="fas fa-link fa-xs"></i> Kashi </a>
+    <div class="dropdown-divider"></div> 
+    <a href="#what-kashi">What is a Kashi ?</a><br>
+    <a href="#kashi-el">Kashi Elements</a><br>
+    <div class="dropdown-divider"></div>
+</div>
+<!--end sidebar-->
+
+<script src="js/prism.js"></script>
+</body>
+</html>
